@@ -6,6 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * This application is a simple version of a calculator
+ * @author Nika Soltani Tehrani
+ * @version 1.0.0
+ */
 public class Main extends Application {
 
     @Override
@@ -17,6 +22,11 @@ public class Main extends Application {
     }
 
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }

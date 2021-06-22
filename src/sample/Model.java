@@ -1,7 +1,18 @@
 package sample;
 
+/**
+ * The type Model.
+ */
 public class Model {
 
+    /**
+     * Calculate 1 float.
+     *
+     * @param num1     the num 1
+     * @param num2     the num 2
+     * @param operator the operator
+     * @return the float
+     */
     public float calculate1(long num1, long num2, String operator)
     {
         switch (operator)
@@ -35,6 +46,13 @@ public class Model {
 
     }
 
+    /**
+     * Calculate 2 double.
+     *
+     * @param num1     the num 1
+     * @param operator the operator
+     * @return the double
+     */
     public double calculate2(long num1, String operator)
     {
         switch (operator)

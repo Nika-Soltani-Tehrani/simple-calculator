@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+/**
+ * The type Controller.
+ */
 public class Controller {
 
     @FXML
@@ -15,6 +18,11 @@ public class Controller {
     private boolean cosine = false;
     private Model model = new Model();
 
+    /**
+     * Process numbers.
+     *
+     * @param event the event
+     */
     @FXML
     public void processNumbers(ActionEvent event)
     {
@@ -27,6 +35,11 @@ public class Controller {
         result.setText(result.getText() + value);
     }
 
+    /**
+     * Process operators.
+     *
+     * @param event the event
+     */
     @FXML
     public void processOperators(ActionEvent event)
     {
@@ -56,7 +69,7 @@ public class Controller {
                 if (operator.isEmpty())
                     return;
                 long number2 = Long.parseLong(result.getText().split(" ")[2]);
-                System.out.println(number2);
+
                 float output = model.calculate1(number1, number2, operator);
                 result.setText(String.valueOf(output));
                 operator = "";
@@ -67,11 +80,15 @@ public class Controller {
     }
 
 
+    /**
+     * Ac.
+     *
+     * @param event the event
+     */
     @FXML
     public void AC(ActionEvent event)
     {
-        //System.out.println("button");
-        //String value = ((Button)event.getSource()).getText();
+
         result.setText("");
         start = true;
 
